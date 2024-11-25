@@ -11,13 +11,13 @@ export const tabs = [
 ];
 
 export const App = () => {
-  const [activeTabId, setActiveTabId] = useState(tabs[0].id); // Устанавливаем первую вкладку по умолчанию.
+  const [activeTabId, setActiveTabId] = useState(tabs[0].id); 
 
   const onTabSelected = id => {
-    setActiveTabId(id); // Обновляем активную вкладку при выборе.
+    setActiveTabId(id); 
   };
 
-  const selectedTab = tabs.find(tab => tab.id === activeTabId) || tabs[0]; // Если id не найден, берем первую вкладку.
+  const selectedTab = tabs.find(tab => tab.id === activeTabId) || tabs[0]; 
 
   return (
     <div className="section">
